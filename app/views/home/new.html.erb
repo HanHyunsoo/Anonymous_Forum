@@ -1,0 +1,6 @@
+<form action='/home/create' method='post'>
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <input class="form-control form-control-lg" type="text" name='post_title' placeholder="제목">
+    <input class="form-control" type="text" name="post_content" placeholder="내용"><br>
+    <button type="submit" class="btn btn-secondary">제출</button>
+</form>
